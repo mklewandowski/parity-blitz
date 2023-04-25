@@ -17,6 +17,23 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI HUDTutorialButtonText;
 
+    [SerializeField]
+    GameObject HUDGame;
+    [SerializeField]
+    TextMeshProUGUI HUDScore;
+    [SerializeField]
+    RectTransform HUDTimer;
+    [SerializeField]
+    TextMeshProUGUI BinaryNumber;
+
+    int numLength = 4;
+    bool currentIsGood = true;
+    int currentScore = 0;
+    float gameTimer = 5f;
+    bool isPlaying = false;
+    float timerSizeMax = 380f;
+    float gameTimerMax = 5f;
+
     int tutorialNum = 0;
     string[] tutorialStrings = {
         "Computers store data as binary numbers.\n\nBinary numbers are made up of 0s and 1s.\n\nThey looks like this:\n\n00101\n10110\n11001",
@@ -37,7 +54,16 @@ public class GameSceneManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (isPlaying)
+        {
+            gameTimer -= Time.deltaTime;
+            if (gameTimer < 0)
+            {
+                gameTimer = 0;
+                GameOver();
+            }
+            HUDTimer.sizeDelta = new Vector2(timerSizeMax * gameTimer / gameTimerMax, HUDTimer.sizeDelta.y);
+        }
     }
 
     public void StartTutorial()
@@ -67,5 +93,59 @@ public class GameSceneManager : MonoBehaviour
     public void StartGame()
     {
         HUDTutorial.GetComponent<MoveNormal>().MoveDown();
+        currentScore = 0;
+        GenerateNumber();
+        HUDGame.GetComponent<MoveNormal>().MoveDown();
+        isPlaying = true;
+    }
+
+    public void GenerateNumber()
+    {
+        string binaryNum = "";
+        int binarySum = 0;
+        for (int x = 0; x < numLength; x++)
+        {
+            int val = Random.Range(0, 2);
+            if (val == 0)
+            {
+                binaryNum = binaryNum + "0";
+            }
+            else
+            {
+                binaryNum = binaryNum + "1";
+                binarySum++;
+            }
+        }
+        BinaryNumber.text = binaryNum;
+        currentIsGood = binarySum % 2 == 0;
+        gameTimer = gameTimerMax;
+    }
+
+    public void SelectGood()
+    {
+        if (currentIsGood)
+        {
+            currentScore++;
+            GenerateNumber();
+        }
+        else
+            GameOver();
+        HUDScore.text = currentScore.ToString();
+    }
+    public void SelectBad()
+    {
+        if (!currentIsGood)
+        {
+            currentScore++;
+            GenerateNumber();
+        }
+        else
+            GameOver();
+        HUDScore.text = currentScore.ToString();
+    }
+
+    public void GameOver()
+    {
+        isPlaying = false;
     }
 }
