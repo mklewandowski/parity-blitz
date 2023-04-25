@@ -25,6 +25,12 @@ public class GameSceneManager : MonoBehaviour
     RectTransform HUDTimer;
     [SerializeField]
     TextMeshProUGUI BinaryNumber;
+    [SerializeField]
+    GameObject HUDGameOver;
+    [SerializeField]
+    GameObject HUDReplay;
+    [SerializeField]
+    GameObject HUDPlayButtons;
 
     int numLength = 4;
     bool currentIsGood = true;
@@ -93,9 +99,13 @@ public class GameSceneManager : MonoBehaviour
     public void StartGame()
     {
         HUDTutorial.GetComponent<MoveNormal>().MoveDown();
+        HUDGameOver.GetComponent<MoveNormal>().MoveUp();
+        HUDReplay.GetComponent<MoveNormal>().MoveDown();
         currentScore = 0;
+        HUDScore.text = currentScore.ToString();
         GenerateNumber();
         HUDGame.GetComponent<MoveNormal>().MoveDown();
+        HUDPlayButtons.GetComponent<MoveNormal>().MoveUp();
         isPlaying = true;
     }
 
@@ -147,5 +157,8 @@ public class GameSceneManager : MonoBehaviour
     public void GameOver()
     {
         isPlaying = false;
+        HUDGameOver.GetComponent<MoveNormal>().MoveDown();
+        HUDReplay.GetComponent<MoveNormal>().MoveUp();
+        HUDPlayButtons.GetComponent<MoveNormal>().MoveDown();
     }
 }
