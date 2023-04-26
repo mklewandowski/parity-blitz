@@ -28,6 +28,8 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField]
     GameObject HUDGameOver;
     [SerializeField]
+    TextMeshProUGUI HUDGameOverText;
+    [SerializeField]
     GameObject HUDReplay;
     [SerializeField]
     GameObject HUDPlayButtons;
@@ -66,6 +68,7 @@ public class GameSceneManager : MonoBehaviour
             if (gameTimer < 0)
             {
                 gameTimer = 0;
+                HUDGameOverText.text = "OUT OF TIME!";
                 GameOver();
             }
             HUDTimer.sizeDelta = new Vector2(timerSizeMax * gameTimer / gameTimerMax, HUDTimer.sizeDelta.y);
@@ -138,8 +141,10 @@ public class GameSceneManager : MonoBehaviour
             currentScore++;
             GenerateNumber();
         }
-        else
+        {
+            HUDGameOverText.text = "WRONG!";
             GameOver();
+        }
         HUDScore.text = currentScore.ToString();
     }
     public void SelectBad()
@@ -150,7 +155,10 @@ public class GameSceneManager : MonoBehaviour
             GenerateNumber();
         }
         else
+        {
+            HUDGameOverText.text = "WRONG!";
             GameOver();
+        }
         HUDScore.text = currentScore.ToString();
     }
 

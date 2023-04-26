@@ -306,6 +306,7 @@ MonoBehaviour:
   HUDTimer: {fileID: 1071436813}
   BinaryNumber: {fileID: 1614014027}
   HUDGameOver: {fileID: 2106405585}
+  HUDGameOverText: {fileID: 1813193234}
   HUDReplay: {fileID: 190860944}
   HUDPlayButtons: {fileID: 379356963}
 --- !u!4 &94470846
