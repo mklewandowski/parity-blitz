@@ -101,6 +101,9 @@ public class GameSceneManager : MonoBehaviour
 
     public void StartGame()
     {
+        HUDTitle.GetComponent<MoveNormal>().MoveUp();
+        HUDIntroAndStart.GetComponent<MoveNormal>().MoveDown();
+
         HUDTutorial.GetComponent<MoveNormal>().MoveDown();
         HUDGameOver.GetComponent<MoveNormal>().MoveUp();
         HUDReplay.GetComponent<MoveNormal>().MoveDown();
