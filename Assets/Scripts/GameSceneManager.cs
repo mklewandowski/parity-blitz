@@ -144,6 +144,7 @@ public class GameSceneManager : MonoBehaviour
             currentScore++;
             GenerateNumber();
         }
+        else
         {
             HUDGameOverText.text = "WRONG!";
             GameOver();
