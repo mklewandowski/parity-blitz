@@ -6,6 +6,8 @@ using TMPro;
 
 public class GameSceneManager : MonoBehaviour
 {
+    AudioManager audioManager;
+
     [SerializeField]
     GameObject HUDTitle;
     [SerializeField]
@@ -55,6 +57,7 @@ public class GameSceneManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioManager = this.GetComponent<AudioManager>();
         HUDTitle.GetComponent<MoveNormal>().MoveDown();
         HUDIntroAndStart.GetComponent<MoveNormal>().MoveUp();
     }
@@ -80,6 +83,7 @@ public class GameSceneManager : MonoBehaviour
         HUDTitle.GetComponent<MoveNormal>().MoveUp();
         HUDIntroAndStart.GetComponent<MoveNormal>().MoveDown();
         HUDTutorial.GetComponent<MoveNormal>().MoveUp();
+        audioManager.PlaySelectSound();
     }
 
     public void AdvanceTutorial()
@@ -92,6 +96,7 @@ public class GameSceneManager : MonoBehaviour
         }
         else
         {
+            audioManager.PlayMenuSound();
             // next tutorial
             HUDTutorialText.text = tutorialStrings[tutorialNum];
             if (tutorialNum == tutorialStrings.Length - 1)
@@ -101,6 +106,7 @@ public class GameSceneManager : MonoBehaviour
 
     public void StartGame()
     {
+        audioManager.PlaySelectSound();
         HUDTitle.GetComponent<MoveNormal>().MoveUp();
         HUDIntroAndStart.GetComponent<MoveNormal>().MoveDown();
 
@@ -141,8 +147,7 @@ public class GameSceneManager : MonoBehaviour
     {
         if (currentIsGood)
         {
-            currentScore++;
-            GenerateNumber();
+            CorrectAnswer();
         }
         else
         {
@@ -155,8 +160,7 @@ public class GameSceneManager : MonoBehaviour
     {
         if (!currentIsGood)
         {
-            currentScore++;
-            GenerateNumber();
+            CorrectAnswer();
         }
         else
         {
@@ -166,8 +170,16 @@ public class GameSceneManager : MonoBehaviour
         HUDScore.text = currentScore.ToString();
     }
 
+    public void CorrectAnswer()
+    {
+        audioManager.PlayCorrectSound();
+        currentScore++;
+        GenerateNumber();
+    }
+
     public void GameOver()
     {
+        audioManager.PlayWrongSound();
         isPlaying = false;
         HUDGameOver.GetComponent<MoveNormal>().MoveDown();
         HUDReplay.GetComponent<MoveNormal>().MoveUp();
