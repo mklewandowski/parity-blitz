@@ -129,6 +129,7 @@ public class GameSceneManager : MonoBehaviour
         HUDReplay.GetComponent<MoveNormal>().MoveDown();
         currentScore = 0;
         numLength = 4;
+        gameTimerMax = 5f;
         HUDScore.text = currentScore.ToString();
         GenerateNumber();
         HUDGame.GetComponent<MoveNormal>().MoveDown();
@@ -192,6 +193,10 @@ public class GameSceneManager : MonoBehaviour
         if (currentScore == 5 || currentScore == 10 || currentScore == 20 || currentScore == 40)
         {
             numLength++;
+        }
+        if (currentScore == 8 || currentScore == 16 || currentScore == 24 || currentScore == 32)
+        {
+            gameTimerMax = gameTimerMax - .5f;
         }
         HUDCorrect.transform.localScale = new Vector3(.1f, .1f, .1f);
         HUDCorrect.SetActive(true);
