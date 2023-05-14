@@ -28,6 +28,8 @@ public class GameSceneManager : MonoBehaviour
     [SerializeField]
     TextMeshProUGUI BinaryNumber;
     [SerializeField]
+    GameObject HUDCorrect;
+    [SerializeField]
     GameObject HUDGameOver;
     [SerializeField]
     TextMeshProUGUI HUDGameOverText;
@@ -43,6 +45,9 @@ public class GameSceneManager : MonoBehaviour
     bool isPlaying = false;
     float timerSizeMax = 380f;
     float gameTimerMax = 5f;
+
+    float correctTimer = 0f;
+    float correctTimerMax = 1f;
 
     int tutorialNum = 0;
     string[] tutorialStrings = {
@@ -75,6 +80,15 @@ public class GameSceneManager : MonoBehaviour
                 GameOver();
             }
             HUDTimer.sizeDelta = new Vector2(timerSizeMax * gameTimer / gameTimerMax, HUDTimer.sizeDelta.y);
+        }
+
+        if (correctTimer > 0)
+        {
+            correctTimer -= Time.deltaTime;
+            if (correctTimer < 0)
+            {
+                HUDCorrect.SetActive(false);
+            }
         }
     }
 
@@ -174,6 +188,10 @@ public class GameSceneManager : MonoBehaviour
     {
         audioManager.PlayCorrectSound();
         currentScore++;
+        HUDCorrect.transform.localScale = new Vector3(.1f, .1f, .1f);
+        HUDCorrect.SetActive(true);
+        HUDCorrect.GetComponent<GrowAndShrink>().StartEffect();
+        correctTimer = correctTimerMax;
         GenerateNumber();
     }
 
