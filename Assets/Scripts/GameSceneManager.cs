@@ -141,6 +141,7 @@ public class GameSceneManager : MonoBehaviour
     {
         string binaryNum = "";
         int binarySum = 0;
+        BinaryNumber.text = "";
         for (int x = 0; x < numLength; x++)
         {
             int val = Random.Range(0, 2);
@@ -153,8 +154,10 @@ public class GameSceneManager : MonoBehaviour
                 binaryNum = binaryNum + "1";
                 binarySum++;
             }
+            BinaryNumber.text = x == numLength - 1
+                ? BinaryNumber.text + "<color=#F8B195>" + val + "</color>"
+                : BinaryNumber.text + val;
         }
-        BinaryNumber.text = binaryNum;
         currentIsGood = binarySum % 2 == 0;
         gameTimer = gameTimerMax;
     }
