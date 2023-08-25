@@ -65,10 +65,15 @@ public class GameSceneManager : MonoBehaviour
 
     };
 
+    [SerializeField]
+    TextMeshProUGUI LanguageText;
 
     // Start is called before the first frame update
     void Start()
-    {
+    {        
+        Globals.LoadUserSettings();
+        SelectLanguage(Globals.CurrentLanguage);
+
         audioManager = this.GetComponent<AudioManager>();
         HUDTitle.GetComponent<MoveNormal>().MoveDown();
         HUDIntroAndStart.GetComponent<MoveNormal>().MoveUp();
@@ -232,5 +237,37 @@ public class GameSceneManager : MonoBehaviour
         HUDIntroAndStart.GetComponent<MoveNormal>().MoveUp();
         HUDGame.GetComponent<MoveNormal>().MoveUp();
         HUDPlayButtons.GetComponent<MoveNormal>().MoveUp();
+    }
+
+    public void ToggleLanguage()
+    {
+        audioManager.PlaySelectSound();
+        if (Globals.CurrentLanguage == Globals.Language.English)
+            SelectLanguage(Globals.Language.Spanish);
+        else
+            SelectLanguage(Globals.Language.English);
+    }
+
+    public void SelectLanguage(Globals.Language newLang)
+    {
+        Globals.CurrentLanguage = newLang;
+        if (Globals.CurrentLanguage == Globals.Language.English)
+            LanguageText.text = "ESPAÑOL";
+        else
+            LanguageText.text = "ENGLISH";
+
+        TranslateText[] textObjects = GameObject.FindObjectsOfType<TranslateText>(true);
+        for (int i = 0; i < textObjects.Length; i++)
+        {
+            textObjects[i].UpdateText();
+        }
+
+        TranslateImage[] imageObjects = GameObject.FindObjectsOfType<TranslateImage>(true);
+        for (int i = 0; i < imageObjects.Length; i++)
+        {
+            imageObjects[i].UpdateImage();
+        }
+
+        Globals.SaveIntToPlayerPrefs(Globals.LanguageStorageKey, (int)newLang);
     }
 }
