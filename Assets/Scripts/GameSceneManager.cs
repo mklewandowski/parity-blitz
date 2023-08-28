@@ -130,6 +130,8 @@ public class GameSceneManager : MonoBehaviour
         HUDIntroAndStart.GetComponent<MoveNormal>().MoveDown();
         HUDTutorial.GetComponent<MoveNormal>().MoveUp();
         audioManager.PlaySelectSound();
+        tutorialNum = 0;
+        ConfigureTutorial();
     }
 
     public void AdvanceTutorial()
@@ -143,18 +145,23 @@ public class GameSceneManager : MonoBehaviour
         else
         {
             audioManager.PlayMenuSound();
-            // next tutorial
+            ConfigureTutorial();
+        }
+    }
+
+    void ConfigureTutorial()
+    {
+        // next tutorial
+        if (Globals.CurrentLanguage == Globals.Language.English)
+            HUDTutorialText.text = tutorialStrings[tutorialNum];
+        else
+            HUDTutorialText.text = tutorialStringsSP[tutorialNum];
+        if (tutorialNum == tutorialStrings.Length - 1)
+        {
             if (Globals.CurrentLanguage == Globals.Language.English)
-                HUDTutorialText.text = tutorialStrings[tutorialNum];
+                HUDTutorialButtonText.text = "PLAY";
             else
-                HUDTutorialText.text = tutorialStringsSP[tutorialNum];
-            if (tutorialNum == tutorialStrings.Length - 1)
-            {
-                if (Globals.CurrentLanguage == Globals.Language.English)
-                    HUDTutorialButtonText.text = "PLAY";
-                else
-                    HUDTutorialButtonText.text = "PLAY";                
-            }
+                HUDTutorialButtonText.text = "PLAY";                
         }
     }
 
@@ -271,6 +278,7 @@ public class GameSceneManager : MonoBehaviour
         HUDIntroAndStart.GetComponent<MoveNormal>().MoveUp();
         HUDGame.GetComponent<MoveNormal>().MoveUp();
         HUDPlayButtons.GetComponent<MoveNormal>().MoveUp();
+        HUDTutorial.GetComponent<MoveNormal>().MoveDown();
     }
 
     public void ToggleLanguage()
