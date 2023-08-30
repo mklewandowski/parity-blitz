@@ -1879,8 +1879,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "ESPA\xD1OL"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
+  m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1904,8 +1904,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 30
-  m_fontSizeBase: 30
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2277,7 +2277,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -100}
+  m_AnchoredPosition: {x: 0, y: -130}
   m_SizeDelta: {x: 800, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &861489188
@@ -2302,8 +2302,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: YOU are the computer and must check for errors in the incoming transmission!
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
+  m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2327,15 +2327,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 256
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -2567,8 +2567,8 @@ MonoBehaviour:
     the count is even it matches the rule and they know the message is correct. If
     the count is odd, they know something went wrong when writing the message."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
+  m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2592,8 +2592,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40
-  m_fontSizeBase: 40
+  m_fontSize: 34
+  m_fontSizeBase: 34
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2602,7 +2602,7 @@ MonoBehaviour:
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535
-  m_characterSpacing: -5
+  m_characterSpacing: 0
   m_wordSpacing: 0
   m_lineSpacing: -10
   m_lineSpacingMax: 0
