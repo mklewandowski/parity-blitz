@@ -994,7 +994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - GOOD
-  - GOOD
+  - BUENO
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -1494,7 +1494,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HOME
+  m_text: Home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
@@ -1584,8 +1584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - HOME
-  - HOME
+  - Home
+  - Inicio
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -1648,7 +1648,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: REPLAY?
+  m_text: Replay?
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
@@ -1738,8 +1738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - REPLAY?
-  - REPLAY?
+  - Replay?
+  - "\xBFQuieres repetirlo?"
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - YOU are the computer and must check for errors in the incoming transmission!
-  - YOU are the computer and must check for errors in the incoming transmission!
+  - "\xA1T\xDA eres la computadora y debes buscar errores en la transmisi\xF3n entrante!"
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -2912,7 +2912,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: Play
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
@@ -3002,8 +3002,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - PLAY
-  - JUGAR
+  - Play
+  - Jugar
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -3198,7 +3198,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 200, y: -300}
-  m_SizeDelta: {x: 300, y: 90}
+  m_SizeDelta: {x: 350, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204666314
 MonoBehaviour:
@@ -3414,7 +3414,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NEXT
+  m_text: Next
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
@@ -3504,8 +3504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - NEXT
-  - NEXT
+  - Next
+  - 'Siguiente '
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -3548,7 +3548,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -200, y: -300}
-  m_SizeDelta: {x: 300, y: 90}
+  m_SizeDelta: {x: 350, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316088917
 MonoBehaviour:
@@ -3779,7 +3779,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME GUIDE
+  m_text: Game Guide
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
@@ -3869,8 +3869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - GAME GUIDE
-  - GAME GUIDE
+  - Game Guide
+  - Guia del juego
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -4024,7 +4024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - BAD
-  - BAD
+  - MALO
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -4867,7 +4867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - CORRECT!
-  - CORRECT!
+  - CORRECTO
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -5239,8 +5239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 0}
-  m_SizeDelta: {x: 300, y: 90}
+  m_AnchoredPosition: {x: 250, y: 0}
+  m_SizeDelta: {x: 410, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1994404279
 MonoBehaviour:
@@ -5374,8 +5374,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 0}
-  m_SizeDelta: {x: 300, y: 90}
+  m_AnchoredPosition: {x: -250, y: 0}
+  m_SizeDelta: {x: 410, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017913305
 MonoBehaviour:
@@ -5638,8 +5638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - HOME
-  - HOME
+  - Home
+  - Inicio
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -5663,7 +5663,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HOME
+  m_text: Home
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}

@@ -107,7 +107,7 @@ public class GameSceneManager : MonoBehaviour
                     if (Globals.CurrentLanguage == Globals.Language.English)
                         HUDGameOverText.text = "OUT OF TIME!";
                     else
-                        HUDGameOverText.text = "OUT OF TIME!";                
+                        HUDGameOverText.text = "FUERA DE TIEMPO";                
                 }
                 GameOver();
             }
@@ -159,9 +159,9 @@ public class GameSceneManager : MonoBehaviour
         if (tutorialNum == tutorialStrings.Length - 1)
         {
             if (Globals.CurrentLanguage == Globals.Language.English)
-                HUDTutorialButtonText.text = "PLAY";
+                HUDTutorialButtonText.text = "Play";
             else
-                HUDTutorialButtonText.text = "PLAY";                
+                HUDTutorialButtonText.text = "Jugar";                
         }
     }
 
@@ -220,7 +220,7 @@ public class GameSceneManager : MonoBehaviour
             if (Globals.CurrentLanguage == Globals.Language.English)
                 HUDGameOverText.text = "WRONG!";
             else
-                HUDGameOverText.text = "WRONG!";
+                HUDGameOverText.text = "INCORRECTO";
             GameOver();
         }
         HUDScore.text = currentScore.ToString();
@@ -236,7 +236,7 @@ public class GameSceneManager : MonoBehaviour
             if (Globals.CurrentLanguage == Globals.Language.English)
                 HUDGameOverText.text = "WRONG!";
             else
-                HUDGameOverText.text = "WRONG!";
+                HUDGameOverText.text = "INCORRECTO";
             GameOver();
         }
         HUDScore.text = currentScore.ToString();
