@@ -4327,6 +4327,7 @@ GameObject:
   - component: {fileID: 1637304600}
   - component: {fileID: 1637304599}
   - component: {fileID: 1637304601}
+  - component: {fileID: 1637304602}
   m_Layer: 5
   m_Name: TitleImage
   m_TagString: Untagged
@@ -4412,6 +4413,21 @@ MonoBehaviour:
   movingDownVelocity: -1500
   movingLeftVelocity: -1500
   movingRightVelocity: 1500
+--- !u!114 &1637304602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637304597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35c2e82f13f56441b6f010b7e74a89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedImage:
+  - {fileID: 21300000, guid: 085914cd804647c4da8a892c6fa1b323, type: 3}
+  - {fileID: 21300000, guid: 677d1b423d160a84ebe42f9e05b6cd40, type: 3}
 --- !u!1 &1691311118
 GameObject:
   m_ObjectHideFlags: 0
