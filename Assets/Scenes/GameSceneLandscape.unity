@@ -905,8 +905,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: GOOD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -930,8 +930,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - GOOD
-  - GOOD
+  - BUENO
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -1494,10 +1494,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HOME
+  m_text: Home
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1521,8 +1521,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1584,8 +1584,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - HOME
-  - HOME
+  - Home
+  - Inicio
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -1648,10 +1648,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: REPLAY?
+  m_text: Replay?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1675,8 +1675,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -1738,8 +1738,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - REPLAY?
-  - REPLAY?
+  - Replay?
+  - "\xBFQuieres repetirlo?"
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -1879,8 +1879,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "ESPA\xD1OL"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
-  m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1904,8 +1904,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 25
-  m_fontSizeBase: 25
+  m_fontSize: 18
+  m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2391,7 +2391,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - YOU are the computer and must check for errors in the incoming transmission!
-  - YOU are the computer and must check for errors in the incoming transmission!
+  - "\xA1T\xDA eres la computadora y debes buscar errores en la transmisi\xF3n entrante!"
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -2557,15 +2557,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Imagine you and your friends are passing secret notes in class using a
-    complex code of letters, and you want to make sure that neither of you messes
-    up the message. You decide on a rule that the count of the letters in your message
-    is always an <b><color=#EEAA8F>even number.</color></b>\\n\\nIf your message
-    has an odd number of letters, you add an extra <b><color=#EEAA8F>Z</color></b>
-    at the end. If it has an even number of letters, you don\u2019t add anything.\\n\\nNow,
-    when your friend gets the note, they can quickly count the total letters. If
-    the count is even it matches the rule and they know the message is correct. If
-    the count is odd, they know something went wrong when writing the message."
+  m_text: "Imagine you and your friends are passing secret messages in class using
+    a complex code of letters, and you want to make sure that neither of you messed
+    up writing a message. You decide on a rule that the count of the letters in your
+    message is always even.\\n\\nIf your message has an odd number of letters, you
+    add an extra Z at the end. If it has an even number of letters, you don\u2019t
+    add anything.\\n\\nNow when you get the secret message, you can quickly count
+    the letters to check. If the count is even, it matches the rule and you can be
+    more confident the message is correct. If the count is odd, you know something
+    went wrong when writing the message."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
   m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
@@ -2604,7 +2604,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -10
+  m_lineSpacing: -15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
@@ -2912,10 +2912,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: PLAY
+  m_text: Play
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2939,8 +2939,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -3002,8 +3002,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - PLAY
-  - JUGAR
+  - Play
+  - Jugar
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -3198,7 +3198,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 200, y: -300}
-  m_SizeDelta: {x: 300, y: 90}
+  m_SizeDelta: {x: 350, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1204666314
 MonoBehaviour:
@@ -3414,10 +3414,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NEXT
+  m_text: Next
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3441,8 +3441,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -3504,8 +3504,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - NEXT
-  - NEXT
+  - Next
+  - 'Siguiente '
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -3548,7 +3548,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -200, y: -300}
-  m_SizeDelta: {x: 300, y: 90}
+  m_SizeDelta: {x: 350, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1316088917
 MonoBehaviour:
@@ -3779,10 +3779,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: GAME GUIDE
+  m_text: Game Guide
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3806,8 +3806,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -3869,8 +3869,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - GAME GUIDE
-  - GAME GUIDE
+  - Game Guide
+  - Guia del juego
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -3935,8 +3935,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: BAD
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3960,8 +3960,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
@@ -4024,7 +4024,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - BAD
-  - BAD
+  - MALO
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -4327,6 +4327,7 @@ GameObject:
   - component: {fileID: 1637304600}
   - component: {fileID: 1637304599}
   - component: {fileID: 1637304601}
+  - component: {fileID: 1637304602}
   m_Layer: 5
   m_Name: TitleImage
   m_TagString: Untagged
@@ -4412,6 +4413,21 @@ MonoBehaviour:
   movingDownVelocity: -1500
   movingLeftVelocity: -1500
   movingRightVelocity: 1500
+--- !u!114 &1637304602
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637304597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a35c2e82f13f56441b6f010b7e74a89f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TranslatedImage:
+  - {fileID: 21300000, guid: 085914cd804647c4da8a892c6fa1b323, type: 3}
+  - {fileID: 21300000, guid: 677d1b423d160a84ebe42f9e05b6cd40, type: 3}
 --- !u!1 &1691311118
 GameObject:
   m_ObjectHideFlags: 0
@@ -4851,7 +4867,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TranslatedText:
   - CORRECT!
-  - CORRECT!
+  - CORRECTO
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -5223,8 +5239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 200, y: 0}
-  m_SizeDelta: {x: 300, y: 90}
+  m_AnchoredPosition: {x: 250, y: 0}
+  m_SizeDelta: {x: 430, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1994404279
 MonoBehaviour:
@@ -5358,8 +5374,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -200, y: 0}
-  m_SizeDelta: {x: 300, y: 90}
+  m_AnchoredPosition: {x: -250, y: 0}
+  m_SizeDelta: {x: 430, y: 90}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2017913305
 MonoBehaviour:
@@ -5622,8 +5638,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TranslatedText:
-  - HOME
-  - HOME
+  - Home
+  - Inicio
   AdjustFont: 0
   FontSize: 0
   LineSpacing: 0
@@ -5647,10 +5663,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: HOME
+  m_text: Home
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 132413589c6147849ab581ed843c8b56, type: 2}
-  m_sharedMaterial: {fileID: 3341469875057839004, guid: 132413589c6147849ab581ed843c8b56, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: f834770c8700a64489f51ac2595b0532, type: 2}
+  m_sharedMaterial: {fileID: 2318941190687226847, guid: f834770c8700a64489f51ac2595b0532, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5674,8 +5690,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 50
-  m_fontSizeBase: 50
+  m_fontSize: 28
+  m_fontSizeBase: 28
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 0
