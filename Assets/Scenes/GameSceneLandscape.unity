@@ -2557,15 +2557,15 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Imagine you and your friends are passing secret notes in class using a
-    complex code of letters, and you want to make sure that neither of you messes
-    up the message. You decide on a rule that the count of the letters in your message
-    is always an <b><color=#EEAA8F>even number.</color></b>\\n\\nIf your message
-    has an odd number of letters, you add an extra <b><color=#EEAA8F>Z</color></b>
-    at the end. If it has an even number of letters, you don\u2019t add anything.\\n\\nNow,
-    when your friend gets the note, they can quickly count the total letters. If
-    the count is even it matches the rule and they know the message is correct. If
-    the count is odd, they know something went wrong when writing the message."
+  m_text: "Imagine you and your friends are passing secret messages in class using
+    a complex code of letters, and you want to make sure that neither of you messed
+    up writing a message. You decide on a rule that the count of the letters in your
+    message is always even.\\n\\nIf your message has an odd number of letters, you
+    add an extra Z at the end. If it has an even number of letters, you don\u2019t
+    add anything.\\n\\nNow when you get the secret message, you can quickly count
+    the letters to check. If the count is even, it matches the rule and you can be
+    more confident the message is correct. If the count is odd, you know something
+    went wrong when writing the message."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
   m_sharedMaterial: {fileID: 4465753052954637598, guid: a59d35a4058d2074f85d36e6778290a2, type: 2}
@@ -2604,7 +2604,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: -10
+  m_lineSpacing: -15
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
