@@ -161,6 +161,13 @@ public class GameSceneManager : MonoBehaviour
             else
                 HUDTutorialButtonText.text = "Jugar";                
         }
+        else
+        {
+            if (Globals.CurrentLanguage == Globals.Language.English)
+                HUDTutorialButtonText.text = "Next";
+            else
+                HUDTutorialButtonText.text = "Siguiente";            
+        }
     }
 
     public void StartGame()
